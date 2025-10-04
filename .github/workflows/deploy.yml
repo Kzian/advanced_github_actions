@@ -1,0 +1,25 @@
+name: Deploy Application
+
+on:
+  push:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+  deployments: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Dependencies
+        run: npm install
+
+      - name: Build App
+        run: npm run build
+
+      - name: Deploy (Placeholder)
+        run: echo "Deploy step goes here - e.g., AWS S3, Heroku, etc."

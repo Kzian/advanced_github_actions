@@ -1,0 +1,13 @@
+{
+  "name": "advanced-github-actions",
+  "version": "1.0.0",
+  "description": "Sample project for advanced GitHub Actions CI/CD workflows",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "node node_modules/jest/bin/jest.js"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
+  }
+}
